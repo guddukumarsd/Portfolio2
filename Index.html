@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guddu`s Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/Guddu Kumar.jpg">
+  <script src="script.js" defer></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Guddu`s Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Dark Mode Toggle -->
+      <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </nav>
+  </header>
+
+ <!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content" data-aos="zoom-in">
+    <h1>Hi, I'm <span>Guddu Kumar</span></h1>
+    <!-- Typing effect -->
+    <p><span id="typing"></span></p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn">Hire Me</a>
+      <a href="assets/Guddu_Kumar_Resume.pdf" class="btn resume-btn" download>
+        <i class="fas fa-download"></i> Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-content" data-aos="fade-right">
+      <img src="assets/Guddu Kumar.jpg" alt="Profile">
+      <div data-aos="fade-left">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate developer with experience in building web applications
+          using MERN stack and Java Spring Boot. I love solving problems and
+          learning new technologies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2 data-aos="fade-up">My Skills</h2>
+    <div class="skill-cards">
+      <div class="card" data-aos="flip-left"><i class="fab fa-html5"></i> HTML</div>
+      <div class="card" data-aos="flip-left" data-aos-delay="100"><i class="fab fa-css3-alt"></i> CSS</div>
+      <div class="card" data-aos="flip-left" data-aos-delay="200"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="card" data-aos="flip-left" data-aos-delay="300"><i class="fab fa-react"></i> React</div>
+      <div class="card" data-aos="flip-left" data-aos-delay="400"><i class="fab fa-node"></i> Node.js</div>
+      <div class="card" data-aos="flip-left" data-aos-delay="500"><i class="fas fa-database"></i> MongoDB</div>
+      <div class="card" data-aos="flip-left" data-aos-delay="600"><i class="fab fa-java"></i> Java</div>
+      <div class="card" data-aos="flip-left" data-aos-delay="700"><i class="fas fa-leaf"></i> Spring Boot</div>
+    </div>
+  </section>
+
+  
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card" data-aos="fade-up">
+      <img src="assets/ParkPro.png" alt="Project 1">
+      <div class="project-info">
+        <h3>ParkPro</h3>
+        <p>A smart parking management system built with MERN stack + Node.js backend.</p>
+        <div class="project-links">
+          <a href="https://github.com/guddukumarsd/parkpro" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://parkpro-demo.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/project2.png" alt="Project 2">
+      <div class="project-info">
+        <h3>ThoughtStream</h3>
+        <p>A blogging platform with JWT auth, built using MERN stack + Tailwind CSS.</p>
+        <div class="project-links">
+          <a href="https://github.com/guddukumarsd/thoughtstream" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://thoughtstream-demo.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="assets/TalkGPT.png" alt="Project 3">
+      <div class="project-info">
+        <h3>TalkGPT</h3>
+        <p>A real-time AI chatbot powered by OpenAI API and React frontend.</p>
+        <div class="project-links">
+          <a href="https://github.com/guddukumarsd/talkgpt" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://talkgpt-demo.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-container">
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required>
+      <input type="email" name="user_email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> guddukumar.bakhari@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 9060060000</p>
+      <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Back to Top Button -->
+<button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>© 2025 Guddu Kumar | All Rights Reserved</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <!-- EmailJS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
